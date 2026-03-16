@@ -21,7 +21,6 @@ window#waybar {
     padding: 4px 8px;
 }
 
-/* First/last workspace buttons match the blob's rounded corners */
 #workspaces button:first-child {
     border-radius: 6px 0 0 6px;
 }
@@ -48,7 +47,6 @@ button:hover {
     background: inherit;
 }
 
-/* Workspaces */
 #workspaces button {
     padding: 0 6px;
     background-color: transparent;
@@ -70,7 +68,6 @@ button:hover {
     color: #f53c3c;
 }
 
-/* Modules — plain text, no backgrounds */
 #clock,
 #battery,
 #cpu,
@@ -95,7 +92,6 @@ button:hover {
     color: #aaaaaa;
 }
 
-/* State overrides — keep color cues for important states, just no backgrounds */
 #battery.charging,
 #battery.plugged {
     color: #26A65B;
