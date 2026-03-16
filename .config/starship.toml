@@ -1,3 +1,5 @@
+# Nerd font's only
+
 "$schema" = 'https://starship.rs/config-schema.json'
 
 [aws]
