@@ -1,4 +1,5 @@
 #!/bin/bash
+# This is the script I use to log out of my session. To use it, put somewhere on your path
 seconds=5
 
 while getopts "c:" opt; do
