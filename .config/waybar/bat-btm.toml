@@ -1,0 +1,7 @@
+[flags]
+default_widget_type = "battery"
+battery = true
+
+[[row]]
+  [[row.child]]
+    type="battery"

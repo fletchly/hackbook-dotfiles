@@ -1,0 +1,6 @@
+[flags]
+default_widget_type = "mem"
+
+[[ row]]
+  [[row.child]]
+    type="mem"

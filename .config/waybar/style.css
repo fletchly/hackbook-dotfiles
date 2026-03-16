@@ -1,0 +1,161 @@
+* {
+    font-family: monospace;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin: 4px 6px;
+    padding: 4px;
+}
+
+.modules-center {
+    padding: 4px 8px;
+}
+
+/* First/last workspace buttons match the blob's rounded corners */
+#workspaces button:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+#workspaces button:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+#workspaces button:first-child:last-child {
+    border-radius: 6px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 6px;
+    background-color: transparent;
+    color: #888888;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#workspaces button.urgent {
+    color: #f53c3c;
+}
+
+/* Modules — plain text, no backgrounds */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd,
+#language,
+#keyboard-state {
+    padding: 0 8px;
+    background-color: transparent;
+    color: #aaaaaa;
+}
+
+/* State overrides — keep color cues for important states, just no backgrounds */
+#battery.charging,
+#battery.plugged {
+    color: #26A65B;
+}
+
+@keyframes blink {
+    to { color: #ffffff; }
+}
+
+#battery.critical:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network.disconnected {
+    color: #f53c3c;
+}
+
+#pulseaudio.muted,
+#wireplumber.muted {
+    color: #555555;
+}
+
+#temperature.critical {
+    color: #f53c3c;
+}
+
+#idle_inhibitor.activated {
+    color: #ffffff;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#tray {
+    padding-top: 2px;
+}
+
+#scratchpad.empty {
+    background-color: transparent;
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: #aaaaaa;
+}
+
+label:focus {
+    background-color: transparent;
+}

@@ -1,0 +1,97 @@
+{
+    "layer": "top",
+    "postition": "top",
+    "height": 28,
+
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+
+    "modules-center": [
+        "sway/window"
+    ],
+
+    "modules-right": [
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "clock",
+        "tray"
+    ],
+
+    "sway/window": {
+        "format": "{title}",
+        "max-length": 60,
+        "truncate": "end",
+        "elipsis": true,
+        "align": "center",
+        "on-click": "activate",
+        "rewrite": {
+            "": " 󰣨 "
+        }
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10,
+        "on-click": "kitty btm -C ~/.config/waybar/cpu-btm.toml"
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "{}% ",
+        "max-length": 10,
+        "on-click": "kitty btm -C ~/.config/waybar/ram-btm.toml"
+    },
+    
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-icons": ["", ""],
+        "format-muted": "",
+        "scroll-step": 1
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""],
+        "scroll-step": 2.0
+    },
+
+    "clock": {
+        "tooltip": true,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+            "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+        },
+        "on-click": "kitty btm -C ~/.config/waybar/bat-btm.toml"
+
+    },
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    }
+}

@@ -1,0 +1,13 @@
+[flags]
+default_widget_type = "cpu"
+hide_avg_cpu = false
+average_cpu_row = true
+current_usage = true
+unnormalized_cpu = false
+
+[cpu]
+default = "average"
+
+[[row]]
+  [[row.child]]
+    type="cpu"
