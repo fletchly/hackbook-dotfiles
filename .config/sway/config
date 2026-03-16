@@ -4,7 +4,7 @@ exec gentoo-pipewire-launcher restart &
 exec mako
 
 ### Variables
-# Alt
+# Cmd/Logo key
 set $mod Mod4
 set $left h
 set $down j
