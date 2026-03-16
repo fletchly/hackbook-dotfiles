@@ -1,7 +1,7 @@
 # Read `man 5 sway` for a complete reference.
 
 exec gentoo-pipewire-launcher restart &
-# exec mako
+exec mako
 
 ### Variables
 # Alt
@@ -33,8 +33,6 @@ default_border pixel
 default_floating_border pixel
 client.focused #00000000 #4d4d4d #ffffff #8f8f8f40 #85858515
 client.unfocused #00000000 #3e3e3eee #cfcfcf #00000000 #00000000
-
-### Idle configuration
 
 ### Input configuration
 input type:touchpad {
@@ -76,6 +74,7 @@ corner_radius 5
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec $logout 
+#
 # Moving around:
 #
     # Move your focus around

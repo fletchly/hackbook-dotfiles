@@ -1,7 +1,7 @@
 # Default values
 highlight_color = "Yellow"
 cursor = "█"
-terminal_launcher = "alacritty -e"
+terminal_launcher = "kitty"
 hard_stop = false
 
 # UI Customization

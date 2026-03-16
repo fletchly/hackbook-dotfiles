@@ -49,13 +49,13 @@ with_argument = true
 [[modules]]
 description = "launch apps with fsel"
 prefix = "a"
-cmd = "/home/owen/.cargo/bin/fsel -vv -r -d -ss \"{}\""
+cmd = "/home/owen/.cargo/bin/fsel -vv -r -d -ss \"{}\"" # explicitly set path because cargo is not in waybar's path, will fix later
 with_argument = true
 
 [[modules]]
 description = "launch apps instantly"
 prefix = "app"
-cmd = "/home/owen/.cargo/bin/fsel -vv -r -d -p {}"
+cmd = "/home/owen/.cargo/bin/fsel -vv -r -d -p {}" # explicitly set path because cargo is not in waybar's path, will fix later
 with_argument = true
 
 [[modules]]
