@@ -2,6 +2,7 @@
 
 exec gentoo-pipewire-launcher restart &
 exec mako
+exec /usr/libexec/polkit-gnome-authentication-agent-1
 
 ### Variables
 # Cmd/Logo key
