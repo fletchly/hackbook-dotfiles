@@ -1,0 +1,6 @@
+2026/03/19-19:28:02.133 5 Reusing MANIFEST /home/owen/.config/net.imput.helium/Default/Local Storage/leveldb/MANIFEST-000001
+2026/03/19-19:28:02.136 5 Recovering log #17
+2026/03/19-19:28:02.136 5 Reusing old log /home/owen/.config/net.imput.helium/Default/Local Storage/leveldb/000017.log 
+2026/03/19-19:29:02.140 7 Level-0 table #22: started
+2026/03/19-19:29:02.153 7 Level-0 table #22: 275732 bytes OK
+2026/03/19-19:29:02.155 7 Delete type=0 #17

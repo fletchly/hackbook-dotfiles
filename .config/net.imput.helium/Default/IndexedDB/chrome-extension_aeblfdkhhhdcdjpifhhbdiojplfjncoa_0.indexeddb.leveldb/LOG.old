@@ -1,0 +1,6 @@
+2026/03/19-09:49:03.920 c633 Reusing MANIFEST /home/owen/.config/net.imput.helium/Default/IndexedDB/chrome-extension_aeblfdkhhhdcdjpifhhbdiojplfjncoa_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/19-09:49:03.920 c633 Recovering log #3
+2026/03/19-09:49:03.938 c633 Reusing old log /home/owen/.config/net.imput.helium/Default/IndexedDB/chrome-extension_aeblfdkhhhdcdjpifhhbdiojplfjncoa_0.indexeddb.leveldb/000003.log 
+2026/03/19-09:50:07.099 c633 Level-0 table #5: started
+2026/03/19-09:50:07.121 c633 Level-0 table #5: 1794787 bytes OK
+2026/03/19-09:50:07.124 c633 Delete type=0 #3

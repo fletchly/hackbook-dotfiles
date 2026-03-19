@@ -1,0 +1,15 @@
+2026/03/19-09:49:03.221 5 Reusing MANIFEST /home/owen/.config/net.imput.helium/Default/Local Storage/leveldb/MANIFEST-000001
+2026/03/19-09:49:03.223 5 Recovering log #14
+2026/03/19-09:49:03.224 5 Reusing old log /home/owen/.config/net.imput.helium/Default/Local Storage/leveldb/000014.log 
+2026/03/19-09:50:03.230 5 Level-0 table #18: started
+2026/03/19-09:50:03.233 5 Level-0 table #18: 47569 bytes OK
+2026/03/19-09:50:03.235 5 Delete type=0 #14
+2026/03/19-09:50:03.236 5 Compacting 4@0 + 1@1 files
+2026/03/19-09:50:03.247 5 Generated table #19@0: 98 keys, 209220 bytes
+2026/03/19-09:50:03.248 5 Compacted 4@0 + 1@1 files => 209220 bytes
+2026/03/19-09:50:03.248 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/03/19-09:50:03.250 5 Delete type=2 #7
+2026/03/19-09:50:03.250 5 Delete type=2 #10
+2026/03/19-09:50:03.250 5 Delete type=2 #13
+2026/03/19-09:50:03.250 5 Delete type=2 #15
+2026/03/19-09:50:03.250 5 Delete type=2 #18
