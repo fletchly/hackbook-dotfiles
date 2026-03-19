@@ -1,7 +1,7 @@
 [general]
 default_module = "app" # The module to run when no prefix is matched
 empty_module = "a" # run with an empty prompt
-exec_cmd = "zsh -c" # The exec command of your shell, default to sh
+exec_cmd = "fish -c" # The exec command of your shell, default to sh
 vi_mode = true # set true to use vi keybinds, false to use emacs keybinds; default to emacs
 esc_to_abort = true # allow to quit with esc keypress; a useful option for vi users
 cheatsheet_entry = "?" # when entered, otter-launcher will show a list of configured modules
@@ -41,21 +41,15 @@ move_right = 0
 move_up = 0
 
 [[modules]]
-description = "kill a runing app"
-prefix = "k"
-cmd = 'ps -u "$USER" -o comm= | sort -u | fsel --dmenu | xargs -r pkill -9'
-with_argument = true
-
-[[modules]]
 description = "launch apps with fsel"
 prefix = "a"
-cmd = "/home/owen/.cargo/bin/fsel -vv -r -d -ss \"{}\"" # explicitly set path because cargo is not in waybar's path, will fix later
+cmd = "fsel -vv -r -d -ss \"{}\""
 with_argument = true
 
 [[modules]]
 description = "launch apps instantly"
 prefix = "app"
-cmd = "/home/owen/.cargo/bin/fsel -vv -r -d -p {}" # explicitly set path because cargo is not in waybar's path, will fix later
+cmd = "fsel -vv -r -d -p {}"
 with_argument = true
 
 [[modules]]
@@ -69,14 +63,6 @@ description = "log out"
 prefix = "lo"
 cmd = "swaylogout"
 with-argument = false
-
-[[modules]]
-description = "run command in terminal"
-prefix = "s"
-cmd = """
-setsid -f "$(echo $TERM | sed 's/xterm-//g')" -e {}
-"""
-with_argument = true
 
 [[modules]]
 description = "search gentoo wiki"

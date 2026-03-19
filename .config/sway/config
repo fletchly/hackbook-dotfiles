@@ -1,8 +1,6 @@
 # Read `man 5 sway` for a complete reference.
 
-exec gentoo-pipewire-launcher restart &
-exec mako
-exec /usr/libexec/polkit-gnome-authentication-agent-1
+include exec
 
 ### Variables
 # Cmd/Logo key
